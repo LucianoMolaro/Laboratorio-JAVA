@@ -165,20 +165,25 @@ public class TP1 {
             else if(ejercicios==13){
                 System.out.println("Introduzca un numero para saber si es primo o no");
                 int x = Integer.parseInt(input.nextLine());
-                int i = 0;
-                int result = 1;
+                int i;
+                int result = 0;
                 if(x>1){
-                    while(result==0 || i==x){
-                        i++;
-                        result=x%i;
+                    for (i=2;i<x;i++){
+                        result= x%i;
+                        
+                        if(result==0){
+                            break;
+                        }
+                    }
+                    if(result==0){
+                        JOptionPane.showMessageDialog(null,"No es primo");
+                    }else if(result!=0){
+                        JOptionPane.showMessageDialog(null, "Es primo");
                     }
                     }
-                switch(result){
-                case 0:
-                    JOptionPane.showMessageDialog(null,"No es primo");
-                default:
-                    JOptionPane.showMessageDialog(null, "Es primo");
-            }
+                else if(x<=1){
+                    JOptionPane.showMessageDialog(null, "No es primo");
+                }
             }
         /*-------------------------------------------------EJERCICIO 14-----------------------------------------------*/
             else if(ejercicios==14){
