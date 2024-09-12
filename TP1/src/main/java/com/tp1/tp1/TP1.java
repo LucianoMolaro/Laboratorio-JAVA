@@ -15,11 +15,11 @@ public class TP1 {
         /*accceso hacia los ejercicios*/
         
         /*System.out.println("Ingrese el ejercicio a realizar");*/
-        int ejercicios = Integer.parseInt(JOptionPane.showInputDialog("Introduce el ejercicio a realizar (1-15)"));
+        int ejercicios = Integer.parseInt(JOptionPane.showInputDialog("Introduce el ejercicio a realizar (1-14)"));
         
-        while (ejercicios>15){
-            JOptionPane.showMessageDialog(null, "No es un ejercicio valido. Por favor introducir un ejercicio del 1 al 15");
-            ejercicios = Integer.parseInt(JOptionPane.showInputDialog("Introduce el ejercicio a realizar (1-15)"));
+        while (ejercicios>14){
+            JOptionPane.showMessageDialog(null, "No es un ejercicio valido. Por favor introducir un ejercicio del 1 al 14");
+            ejercicios = Integer.parseInt(JOptionPane.showInputDialog("Introduce el ejercicio a realizar (1-14)"));
         }
         
         /*paso  a los ejercicios*/
