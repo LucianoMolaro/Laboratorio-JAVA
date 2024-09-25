@@ -197,6 +197,37 @@ public class Main {
             System.out.println("El resultado de la operacion es: " + fm.aplicarOperacion("*"));
         }
         else if (ejercicios==20) {
+            Fraccion f1 = new Fraccion(5, 6);
+            Fraccion f2 = new Fraccion(4, 8);
+
+            System.out.println("La suma de la fraccion " + f1 + " mas " + f2 + " es igual a " + f1.suma(f2));
+            System.out.println("La resta de la fraccion " + f1 + " menos " + f2  + " es igual a " + f1.resta(f2));
+            System.out.println("La multiplicacion de la fraccion " + f1 + " por " + f2  + " es igual a " + f1.multiplicacion(f2));
+            System.out.println("La division de la fraccion " + f1 + " entre " + f2  + " es igual a " + f1.division(f2));
+        }
+        else if(ejercicios==21){
+            System.out.println("Ingrese un numero entero mayor que 0");
+            int a = Integer.parseInt(sc.nextLine());
+            while(a < 1){
+                System.out.println("Ingrese un numero entero mayor que 0");
+                a = Integer.parseInt(sc.nextLine());
+            }
+            recursion21 num = new recursion21();
+            System.out.println(num.imprimir(a));
+        }
+        else if(ejercicios==22) {
+            System.out.println("Ingrese un numero");
+            int numero = sc.nextInt();
+            sumaDigitos total = new sumaDigitos();
+            int resultado = total.sumarDigitos(numero);
+            System.out.println("El resultado de la suma de digitos es: " + resultado);
+        }
+        else if(ejercicios==23) {
+            System.out.println("Ingrese una palabra");
+            String palabra = sc.nextLine();
+            invertirOracion IO = new invertirOracion();
+            System.out.println("La orracion innvertida es: " + IO.invertirOracion(palabra));
+
         }
     }
 }
